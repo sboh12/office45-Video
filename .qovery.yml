@@ -1,0 +1,11 @@
+---
+application:
+  name: "office45-video"
+  project: "office45"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-office45-video"
+  routes:
+  - application_name: "office45-video"
+    paths:
+    - "/*"
