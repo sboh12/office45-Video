@@ -1,0 +1,207 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+
+   
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+		<!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Animate.css -->
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+
+	
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+
+	<link rel="stylesheet" href="css/main.css">
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        const ROOM_ID = "<%= roomId %>"
+        //alert(ROOM_ID);
+    </script>
+    <script defer src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="script.js" defer></script>
+    
+    <title>Help</title>
+    <style>
+        #video-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,300px);
+            grid-auto-rows: 300px;
+        }
+
+        video{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <!--Navbar -->
+<nav class="mb-1 navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">
+        <img src="images/office45.jpg" height="100" class="d-inline-block align-top"
+          alt="Office45 Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+        aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+           <a class="nav-link" href="<?php echo URLROOT;?>/pages/index">
+              <i class="fab fa-home"></i>Welcome<li class="current">
+            </a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="<?php echo URLROOT;?>/academics/schools">
+              <i class="fab fa-book"></i> Academics</a>
+          </li>
+    
+          <li class="nav-item">
+          <a class="nav-link" href="<?php echo URLROOT;?>/fundings/index">
+              <i class="fab fa-money-check-alt"></i> Fundings</a>
+          </li>
+    
+    
+          <li class="nav-item">
+          <a class="nav-link" href="<?php echo URLROOT;?>/office/index">
+              <i class="fab fa-building"></i> Office desk</a>
+          </li>
+    
+         
+          <li class="nav-item">
+          <a class="nav-link" href="<?php echo URLROOT;?>/jobs/index">
+              <i class="fab fa-briefcase"></i> Jobs and vacancies</a>
+          </li>
+    
+    
+    
+    
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggl
+            e" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user"></i> Profile </a>
+            <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
+              <a class="dropdown-item" href="<?php echo URLROOT;?>/users/profile">My account</a>
+              <a class="dropdown-item" href="<?php echo URLROOT;?>/users/logout">Log out</a>
+            
+            </div>
+          </li>
+            
+        </ul>
+      </div>
+    </nav>
+    <!--/.Navbar -->
+    <div id="video-grid"></div>
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<div id="footer-wrapper">
+    <footer id="footer" class="container">
+        <div class="row">
+            <div class="col-12 col-12-medium col-12-small">
+
+                <!-- Contact -->
+                    <section class="widget contact last">
+                        <h3>Contact Us</h3>
+                        <ul>
+                            <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                            <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                        </ul>
+                        <p><br />
+                        Durban, Ntuzuma 4359<br />
+                        (064) 330-9772</p>
+                    </section>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div id="copyright">
+                    <ul class="menu">
+                        <li>&copy; Office45. All rights reserved</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.dropotron.min.js"></script>
+<script src="js/breakpoints.min.js"></script>
+<script src="js/util.js"></script>
+
+<!-- jQuery Easing -->
+<script src="js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="js/jquery.waypoints.min.js"></script>
+<!-- Counters -->
+<script src="js/jquery.countTo.js"></script>
+<!-- Flexslider -->
+<script src="js/jquery.flexslider-min.js"></script>
+<!-- Main JS  -->
+<script src="js/main.js"></script>
+<!-- Modernizr JS -->
+<script src="js/modernizr-2.6.2.min.js"></script>
+</html>
+
